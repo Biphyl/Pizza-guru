@@ -20,3 +20,46 @@ function topping(){
   var topping = document.getElementById("topping").value;
   return parseInt(topping)
 }
+// toppings options
+
+function getPepperoni(){
+  var Pepperoni = 0 ;
+  var pepperoni = document.getElementById("pepperoni");
+  if (pepperoni.onselect === true) {
+    Pepperoni = 150 ;
+  }
+  return parseInt(Pepperoni);
+}
+
+function getMushrooms(){
+  var Mushrooms = 0;
+  var mushrooms = document.getElementById("mushrooms");
+  if (mushrooms.onselect === true) {
+    Mushrooms = 150 ;
+  }
+  return parseInt(Mushrooms);
+}
+function getOnions(){
+  var Onions = 0;
+  var onions = document.getElementById("onions");
+  if (onions.onselect === true) {
+    Onions = 150 ;
+  }
+  return parseInt(Onions);
+}
+function getSausage(){
+  var Sausage = 0;
+  var sausage = document.getElementById("sausage");
+  if (sausage.onselect === true) {
+    Sausage = 150 ;
+  }
+  return parseInt(Sausage);
+}
+function getBacon(){
+  var Bacon = 0;
+  var bacon = document.getElementById("bacon");
+  if (bacon.onselect === true){
+    Bacon = 150;
+  }
+  return parseInt(bacon)
+}
