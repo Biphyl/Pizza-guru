@@ -63,3 +63,8 @@ function getBacon(){
   }
   return parseInt(bacon)
 }
+function calculate() {
+  var calculate = (size() + crust() + getPepperoni() + getMushrooms() + getOnions() + getSausage() + getBacon()) * getNumber();
+  document.getElementById("show").innerHTML = "Hello ,your order is " + ' ' + '' + getNumber() + '' + '' + '' + " pizza" + " and the cost  is ksh. " + calculate;
+
+} 
