@@ -29,28 +29,80 @@
       <div class="description">
         <div id="card">
           <div class="cards">
-            <img src="https://cdn.pixabay.com/photo/2017/01/03/11/33/pizza-1949183__340.jpg" alt=""
-              height="250px" width="250px">
+            <img src="https://cdn.pixabay.com/photo/2017/01/03/11/33/pizza-1949183__340.jpg" alt="" height="250px"
+              width="250px">
             <h2>Topping</h2>
             <p>A baked pie of Italian origin consisting of a shallow breadlike crust covered with toppings such as
               seasoned tomato sauce, cheese, or sausage.</p>
           </div>
           <div class="cards">
-            <img src="https://cdn.pixabay.com/photo/2016/01/14/02/12/pizza-1139222__340.jpg" alt="" height="250px" width="250px">
+            <img src="https://cdn.pixabay.com/photo/2016/01/14/02/12/pizza-1139222__340.jpg" alt="" height="250px"
+              width="250px">
             <h2>Pizza Crust</h2>
             <p>The dough that serves as a base for the pizza that is prepared, formed into a circular, square or
               rectangular shape, baked and then topped with pizza ingredients.</p>
           </div>
           <div class="cards">
-            <img src="https://image.shutterstock.com/image-photo/closeup-businesspeople-taking-slice-pizza-260nw-666257116.jpg" alt="" height="250px" width="250px">
+            <img
+              src="https://image.shutterstock.com/image-photo/closeup-businesspeople-taking-slice-pizza-260nw-666257116.jpg"
+              alt="" height="250px" width="250px">
             <h2>Pizza Sizes</h2>
             <p>Pizza size generally varies between: Small Pizza: 8-10 inches with 6 slices. Medium Pizza: 12 inches with
               8
               slices. Large Pizza: 14 inch with 10 slices.</p>
           </div>
         </div>
+      </div><br><br><br>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form">
+              <div class="form-group">
+                <label for="size">Size</label><br>
+                <select name="form-control" id="size" onselect="size();" class="btn btn-success btn-lg">
+                  <option value="250" id="small" class="btn-primary">Small - 350/-</option>
+                  <option value="550" id="medium" class="btn-primary">Medium - 650/-</option>
+                  <option value="850" id="large" class="btn-primary">Large - 950/-</option>
+                </select>
+              </div><br>
+              <div class="form-group">
+                <label for="crust">Crust:</label><br>
+                <select name="form-control" id="crust" onselect="crust();" class="btn btn-success btn-lg">
+                  <option value="200" id="crispy" class="btn-primary">Crispy 200</option>
+                  <option value="200" id="stuffed" class="btn-primary">Stuffed 200 </option>
+                  <option value="200" id="gluten-free" class="btn-primary">Gluten-free 200</option>
+                </select>
+              </div><br>
+              <div class="form-group">
+                <label for="topping">Topping:</label><br>
+                <select name="form-control" id="topping" class="btn btn-success btn-lg">
+                  <option value="150" id="pepperoni" onselect="getPepperoni();" class="btn-primary">Pepperoni</option>
+                  <option value="150" id="mushrooms" onselect="getMushrooms();" class="btn-primary">Mushrooms</option>
+                  <option value="150" id="onions" onselect="getOnions();" class="btn-primary">Onions</option>
+                  <option value="150" id="sausage" onselect="getSausage();" class="btn-primary">Sausage</option>
+                  <option value="150" id="bacon" onselect="getBacon();" class="btn-primary">Bacon</option>
+
+                </select>
+              </div><br>
+              <div class="quantity">
+                <h4> How many pizza do you want?</h4>
+                <select class="browser-default custom-select" id="getnumber" onselect="getNumber();">
+                  <option value="1">1 </option>
+                  <option value="2">2 </option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+
+                </select>
+              </div>
+              <br>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+  </div>
   </div>
 </body>
 
